@@ -42,16 +42,24 @@ function launch() {
 <TABLE WIDTH="100%"><TR>
   <TD WIDTH="50%">
 <H3 style="background:#ffe6e6;">Text Version 1:</H3>
-<TEXTAREA ID="text1" STYLE="width: 100%" ROWS=10>I am the very model of a modern Major-General,
-I've information vegetable, animal, and mineral,
-I know the kings of England, and I quote the fights historical,
-From Marathon to Waterloo, in order categorical.</TEXTAREA></TD>
+<TEXTAREA ID="text1" STYLE="width: 100%" ROWS=10>
+何處倚闌干。弦管高樓月正圓。
+蝴蝶夢中家萬里，依然。
+老去愁來強自寬。明鏡借紅顏。
+須著人間比夢間。
+蠟燭半籠金翡翠，更闌。
+綉被焚香獨自眠。
+</TEXTAREA></TD>
   <TD WIDTH="50%">
 <H3 style="background:#e6ffe6;">Text Version 2:</H3>
-<TEXTAREA ID="text2" STYLE="width: 100%" ROWS=10>I am the very model of a cartoon individual,
-My animation's comical, unusual, and whimsical,
-I'm quite adept at funny gags, comedic theory I have read,
-From wicked puns and stupid jokes to anvils that drop on your head.</TEXTAREA></TD>
+<TEXTAREA ID="text2" STYLE="width: 100%" ROWS=10>
+聞君亦多感，何處倚闌干。歌謠千里春長暖，絲管高台月正圓。
+蝴蝶夢中家萬里，子規枝上月三更。
+老去悲秋強自寬，興來今日盡君歡。 危弦傷遠道，明鏡惜紅顏。
+莫憂世事兼身事，須著人間比夢間。
+蠟燭半籠金翡翠，麝熏微度繡芙蓉。
+鄂君悵望舟中夜，繡被焚香獨自眠。
+</TEXTAREA></TD>
 </TR></TABLE>
 
 <H3>Diff timeout:</H3>
@@ -62,7 +70,7 @@ it may not be optimal.  A timeout of '0' allows for unlimited computation.</P>
 
 <H3>Post-diff cleanup:</H3>
 <DL>
-<DT><INPUT TYPE="radio" NAME="cleanup" ID="semantic" CHECKED>
+<DT><INPUT TYPE="radio" NAME="cleanup" ID="semantic">
 <LABEL FOR="semantic">Semantic Cleanup</LABEL></DT>
 <DD>Increase human readability by factoring out commonalities which are likely to be
 coincidental.</DD>
@@ -71,7 +79,7 @@ coincidental.</DD>
 edit cost: <INPUT TYPE="text" SIZE=3 MAXLENGTH=5 VALUE="4" ID="editcost">
 <DD>Increase computational efficiency by factoring out short commonalities which are
 not worth the overhead.  The larger the edit cost, the more agressive the cleanup.</DD>
-<DT><INPUT TYPE="radio" NAME="cleanup" ID="raw">
+<DT><INPUT TYPE="radio" NAME="cleanup" ID="raw" CHECKED>
 <LABEL FOR="raw">No Cleanup</LABEL></DT>
 <DD>Raw output.</DD>
 </DL>
