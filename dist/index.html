@@ -27,6 +27,8 @@ function launch() {
   var d = dmp.diff_main(text1, text2);
   var ms_end = (new Date()).getTime();
 
+  console.table(d);
+  
   if (document.getElementById('semantic').checked) {
     dmp.diff_cleanupSemantic(d);
   }
