@@ -10,7 +10,8 @@ function launch() {
   let punctuationArr = [];
   let plaintextArr = [];
   let plaintextLoc = [];
-  let text2Arr = text2.split('');
+  let duplicateText2 = JSON.parse(JSON.stringify( text2 ));
+  let text2Arr = duplicateText2.split('');
   text2Arr.forEach(function(element, index) {
       var reg = new RegExp("[\\u4E00-\\u9FFF]+", "g");
       var isChinese = reg.test(element);
